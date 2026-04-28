@@ -493,7 +493,7 @@ source "${ROOT_DIR}/build/_setup_env.sh"
 export KLEAF_SUPPRESS_BUILD_SH_DEPRECATION_WARNING=1
 
 MAKE_ARGS=( "$@" )
-export MAKEFLAGS="-j$(nproc) ${MAKEFLAGS}"
+export MAKEFLAGS="-j3 ${MAKEFLAGS}"
 export MODULES_STAGING_DIR=$(readlink -m ${COMMON_OUT_DIR}/staging)
 export MODULES_PRIVATE_DIR=$(readlink -m ${COMMON_OUT_DIR}/private)
 export KERNEL_UAPI_HEADERS_DIR=$(readlink -m ${COMMON_OUT_DIR}/kernel_uapi_headers)
