@@ -1,0 +1,6 @@
+kernel/prebuilts/**
+prebuilts/
+out/
+kernel/delta.txt
+kernel/ksymtab.txt
+kernel/symbollist.txt
